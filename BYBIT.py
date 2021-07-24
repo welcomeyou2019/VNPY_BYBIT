@@ -26,7 +26,7 @@ def main(Visualization):
 
         qapp.exec()
 
-    else:
+    else:  #忙着写论文，非图形界面的代码部分还未完成
         event_engine = EventEngine()
 
         main_engine = MainEngine(event_engine)
