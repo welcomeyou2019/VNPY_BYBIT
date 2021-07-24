@@ -6,20 +6,8 @@ from vnpy.trader.ui import MainWindow, create_qapp
 from vnpy.gateway.bybit import BybitGateway
 from vnpy.app.rpc_service import RpcServiceApp
 import time
-from vnpy.trader.constant import Direction, Exchange
-from vnpy.trader.object import (
-    AccountData,
-    BarData,
-    TickData,
-    OrderData,
-    TradeData,
-    ContractData,
-    PositionData,
-    HistoryRequest,
-    SubscribeRequest,
-    CancelRequest,
-    OrderRequest
-)
+from vnpy.trader.constant import Exchange
+from vnpy.trader.object import SubscribeRequest
 
 def main(Visualization):
     """"""
