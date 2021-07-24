@@ -2,7 +2,6 @@ from vnpy.event import EventEngine
 from vnpy.trader.engine import MainEngine
 from vnpy.trader.ui import MainWindow, create_qapp
 from vnpy.gateway.rpc import RpcGateway
-# from vnpy.app.cta_strategy import CtaStrategyApp
 
 
 def main():
