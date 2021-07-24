@@ -1,4 +1,15 @@
 本代码主要借鉴VNPY的框架改写而成，其主要功能：\
 1、实现了可视化BYBIT的行情数据订阅与交易命令；\
 2、实现了rpc广播数据机制.\
-其中BYBIT.py文件主要实现了第一个功能，并作为rpc的server，client.py文件作为rpc的client端接受数据。
+其中BYBIT.py文件主要实现了第一个功能，
+其中bybit_gateway.py提供了数据订阅和交易功能，具体包括以下函数：\
+connect:连接交易所接口，\
+subscribe:订阅行情，\
+send_order:委托下单，\
+cancel_order:撤销订单，\
+query_account:查询资金，\
+query_position:查询持仓，\
+query_history:历史数据，\
+close:关闭连接。
+rpc_gateway.py提供了远程数据调用传输功能，其中rpc_service做为服务端，rpc_gateway作为客户端。\
+client.py文件作为rpc的client端接收数据。
